@@ -1,9 +1,9 @@
 @*
- * This template is called from the `index` template. This template
- * handles the rendering of the page header and body tags. It takes
- * two arguments, a `String` for the title of the page and an `Html`
- * object to insert into the body of the page.
- *@
+* This template is called from the `index` template. This template
+* handles the rendering of the page header and body tags. It takes
+* two arguments, a `String` for the title of the page and an `Html`
+* object to insert into the body of the page.
+*@
 @(title: String)(content: Html)
 
 <!DOCTYPE html>
@@ -21,7 +21,7 @@
         <script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/flatdoc.js'></script>
 
             <!-- Flatdoc theme -->
-        <link  href='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/style.css' rel='stylesheet'>
+        <link href='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/style.css' rel='stylesheet'>
         <script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/script.js'></script>
 
             <!-- Meta -->
@@ -30,14 +30,12 @@
 
             <!-- Initializer -->
         <script>
-        Flatdoc.run({
-        fetcher: Flatdoc.github('USER/REPO')
-        });
+        Flatdoc.run ( {
+        fetcher : Flatdoc.github ( < span class = "string" > 'maggnus/algos' < / span > )
+        } ) ;
         </script>
     </head>
     <body>
-        @* And here's where we render the `Html` object containing
-         * the page content. *@
         @content
     </body>
 </html>
