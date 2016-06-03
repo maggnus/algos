@@ -1,0 +1,37 @@
+@(message: String)
+
+@main("hello") {
+    <div class='header'>
+        <div class='left'>
+            <h1>Your Project</h1>
+            <ul>
+                <li><a href='https://github.com/USER/REPO'>View on GitHub</a></li>
+                <li><a href='https://github.com/USER/REPO/issues'>Issues</a></li>
+            </ul>
+        </div>
+        <div class='right'>
+                <!-- GitHub buttons: see http://ghbtns.com -->
+            <iframe src="http://ghbtns.com/github-btn.html?user=USER&amp;repo=REPO&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+        </div>
+    </div>
+
+    <div class='content-root'>
+        <div class='menubar'>
+            <div class='menu section' role='flatdoc-menu'></div>
+        </div>
+        <div role='flatdoc-content' class='content'>
+
+            <h3 id="customizing-basic-adding-more-markup">Adding more markup</h3>
+            <p>To fetch a Github Repository’s readme file, use the <code>Flatdoc.github</code> fetcher.
+                This will fetch the Readme file of the repository’s default branch.</p>
+            <pre>
+                <code class="lang-javascript">
+                    Flatdoc.run({
+                    fetcher: Flatdoc.github(<span class="string">'USER/REPO'</span>)
+                    });
+                </code>
+            </pre>
+
+        </div>
+    </div>
+}
