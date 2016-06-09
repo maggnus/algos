@@ -97,7 +97,7 @@ Response:
     [377]
 
 
-Get Fibonacci numbers start from 6th up to 23th with **Bine** method
+Get Fibonacci numbers starting from 6th up to 23th with **Bine** method
 
     http://localhost:9000/api/v1/fibonacci/bine/6-23
 
