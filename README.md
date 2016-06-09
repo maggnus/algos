@@ -39,7 +39,7 @@ Testing
     [algos] $ test
 
     [info] FibRecursionTest:
-    [info] Test Bine method
+    [info] Test Recursion method
     [info] - must be equal 13
     [info] - must be equal List(0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377)
     [info] FibBineTest:
@@ -47,7 +47,7 @@ Testing
     [info] - must be equal 13
     [info] - must be equal List(0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377)
     [info] FibDynamicTest:
-    [info] Test Bine method
+    [info] Test Dynamic method
     [info] - must be equal 13
     [info] - must be equal List(0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377)
     [info] ScalaTest
