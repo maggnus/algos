@@ -8,7 +8,7 @@ Algos it is simple RESTful service which provide calculation of some algorithms:
 Installation
 ---------------
 
-This project is written on Play Framework 2.5 with Scala and required minimum **JavaSDK 8** library
+This project is written on Play Framework 2.5 with Scala and required minimum **Java 8 (JDK)** library
 
     $ java -version
     java version "1.8.0_25"
