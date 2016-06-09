@@ -1,0 +1,16 @@
+body {
+    color: #333;
+}
+
+.no-border:before, .no-border:after {
+    content: none !important;
+}
+
+.list-block {
+    margin: 0;
+}
+
+pre {
+    background-color: #ebebeb;
+    padding: 5px 10px;
+}

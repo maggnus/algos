@@ -1,0 +1,129 @@
+@(title: String)(content: Html)
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <title>Algos App</title>
+        <link rel="stylesheet" href="/assets/plugins/fw7/css/framework7.material.min.css">
+        <link rel="stylesheet" href="/assets/plugins/fw7/css/framework7.material.colors.min.css">
+        <link rel="stylesheet" href="/assets/style/main.css">
+    </head>
+    <body>
+        <div class="statusbar-overlay"></div>
+        <div class="panel-overlay"></div>
+        <div class="panel panel-left panel-cover">
+            <div class="view" data-page="panel-left">
+                <div class="pages navbar-fixed">
+                    <div data-page="panel-left" class="page">
+                        <div class="navbar">
+                            <div class="navbar-inner">
+                                <div class="center">Menu</div>
+                            </div>
+                        </div>
+                        <div class="page-content">
+                            <div class="list-block">
+                                <ul>
+                                    <li>
+                                        <a href="/" class="item-link close-panel">
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title">Home</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/fibonacci" class="item-link close-panel">
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title">Fibonacci</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="views">
+            <div class="view view-main">
+                <div class="pages navbar-fixed">
+                    <div data-page="index" class="page">
+                        <div class="navbar">
+                            <div class="navbar-inner">
+                                <div class="center sliding">@title</div>
+                                <div class="right">
+                                    <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        @content
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup response-popup">
+            <div class="view navbar-fixed">
+                <div class="pages">
+                    <div class="page">
+                        <div class="navbar">
+                            <div class="navbar-inner">
+                                <div class="center">Response</div>
+                                <div class="right"><a href="#" class="link close-popup">Done</a></div>
+                            </div>
+                        </div>
+                        <div class="page-content">
+                            <div class="list-block">
+                                <ul>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Status</div>
+                                                <div class="item-after">
+                                                    <span id="response_header"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Request</div>
+                                                <div class="item-after">
+                                                    <span id="response_request"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="align-top">
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title">Result</div>
+                                                <div class="item-input item-input-field">
+                                                    <textarea class="resizable" id="response_result" style="height : 100 px ;"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="/assets/plugins/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="/assets/plugins/fw7/js/framework7.min.js"></script>
+        <script type="text/javascript" src="/assets/js/main.js"></script>
+    </body>
+</html>
