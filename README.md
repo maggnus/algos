@@ -30,7 +30,7 @@ API endpoint:
     http://localhost:9000/api/v1
 
 ![Main screen]
-(https://raw.githubusercontent.com/maggnus/algos/master/public/images/screen.png)
+(https://raw.githubusercontent.com/maggnus/algos/master/public/images/screen2.png)
 
 Testing
 ---------
